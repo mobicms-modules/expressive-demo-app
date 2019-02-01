@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Mobicms\Modules\ExpressiveDemoApp;;
+namespace Mobicms\Modules\ExpressiveDemoApp\Handler;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
