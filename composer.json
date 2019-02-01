@@ -1,0 +1,27 @@
+{
+    "name": "mobicms-modules/expressive-demo-app",
+    "description": "zend-expressive demo app",
+    "type": "mobicms-module",
+    "homepage": "https://mobicms.org",
+    "license": "GPL-3.0-only",
+    "keywords": [
+        "mobicms"
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.1",
+        "mobicms/system": "dev-develop"
+    },
+    "require-dev": {
+        "mobicms/dummy": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mobicms\\Modules\\ExpressiveDemoApp\\": "src/"
+        }
+    }
+}
