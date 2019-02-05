@@ -6,10 +6,8 @@
  * @license     https://opensource.org/licenses/GPL-3.0 GPL-3.0 (see the LICENSE.md file)
  * @link        http://mobicms.org mobiCMS Project
  * @copyright   Copyright (C) mobiCMS Project
+ *
+ * Config file for <mobicms-modules/expressive-demo-app> package
  */
-
-////////////////////////////////////////////////////////////////////////////////
-// Config file for <mobicms-modules/johncms> package                          //
-////////////////////////////////////////////////////////////////////////////////
 
 return (new Mobicms\Modules\ExpressiveDemoApp\ConfigProvider)();
