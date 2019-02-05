@@ -5,7 +5,7 @@ Detailed change in the [repository log](https://github.com/mobicms-modules/expre
 ## Initial release 
 
 ### Added
-- zend-expressive-skeleton demo application
+- [zend-expressive-skeleton](https://github.com/zendframework/zend-expressive-skeleton) demo application
   
 ### Changed
 - Refactoring under the mobiCMS modular system
