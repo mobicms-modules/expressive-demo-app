@@ -13,20 +13,19 @@ use Zend\Expressive\Template\TemplateRendererInterface;
 
 class HomePageHandler implements RequestHandlerInterface
 {
-    /** @var PDO */
-    private $pdo;
-
     /** @var null|TemplateRendererInterface */
     private $template;
 
-    public function __construct(PDO $pdo, TemplateRendererInterface $template)
+    public function __construct(TemplateRendererInterface $template)
     {
-        $this->pdo = $pdo;
         $this->template = $template;
     }
 
     public function handle(ServerRequestInterface $request) : ResponseInterface
     {
+        /** @var PDO $db */
+        $db = $request->getAttribute(PDO::class);
+
         $data = [];
         $data['containerName'] = 'Zend Servicemanager';
         $data['containerDocs'] = 'https://docs.zendframework.com/zend-servicemanager/';
@@ -35,7 +34,7 @@ class HomePageHandler implements RequestHandlerInterface
         $data['templateName'] = 'Plates';
         $data['templateDocs'] = 'http://platesphp.com/';
 
-        $query = $this->pdo->query('SELECT * FROM `test` LIMIT 10');
+        $query = $db->query('SELECT * FROM `test` LIMIT 10');
 
         while ($result = $query->fetch()) {
             $data['pdoDemo'][] = $result['name'];
