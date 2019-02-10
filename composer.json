@@ -14,11 +14,11 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^7.1",
-        "mobicms/system": "dev-develop"
+        "php": "^7.1"
     },
     "require-dev": {
         "mobicms/dummy": "dev-master",
+        "mobicms/system": "dev-develop",
         "roave/security-advisories": "dev-master",
         "squizlabs/php_codesniffer": "^3.4"
     },
