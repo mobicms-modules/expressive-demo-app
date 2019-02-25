@@ -1,4 +1,11 @@
 <?php
+/**
+ * This file is part of mobiCMS Content Management System.
+ *
+ * @copyright   Oleg Kasyanov <dev@mobicms.net>
+ * @license     https://opensource.org/licenses/GPL-3.0 GPL-3.0 (see the LICENSE.md file)
+ * @link        http://mobicms.org mobiCMS Project
+ */
 
 declare(strict_types=1);
 
@@ -43,7 +50,7 @@ class ConfigProvider
     {
         return [
             'paths' => [
-                'app' => [__DIR__ . '/../templates/app'],
+                'app' => [dirname(__DIR__) . '/templates/app'],
             ],
         ];
     }
