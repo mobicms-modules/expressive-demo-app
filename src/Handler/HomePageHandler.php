@@ -11,6 +11,8 @@ declare(strict_types=1);
 
 namespace Mobicms\Modules\ExpressiveDemoApp\Handler;
 
+use Mobicms\System\Http\IpAddressMiddleware;
+use Mobicms\System\Http\UserAgentMiddleware;
 use PDO;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -41,6 +43,9 @@ class HomePageHandler implements RequestHandlerInterface
         $data['routerDocs'] = 'https://github.com/nikic/FastRoute';
         $data['templateName'] = 'Plates';
         $data['templateDocs'] = 'http://platesphp.com/';
+        $data['ipRemote'] = $request->getAttribute(IpAddressMiddleware::IP_REMOTE_ADDR_ATTRIBUTE, '0.0.0.0');
+        $data['ipViaProxy'] = $request->getAttribute(IpAddressMiddleware::IP_VIA_PROXY_ATTRIBUTE, 'not used');
+        $data['userAgent'] = $request->getAttribute(UserAgentMiddleware::USER_AGENT_ATTRIBUTE, 'not recognized');
 
         $query = $this->pdo->query('SELECT * FROM `test` LIMIT 10');
 

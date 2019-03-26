@@ -29,15 +29,15 @@
 
     <div class="col-md-4">
         <h2>
-            <a href="https://github.com/zendframework/zend-diactoros" target="_blank">
-                <i class="fa fa-exchange-alt"></i> HTTP Messages
+            <a href="#">
+                <i class="fa fa-exchange-alt"></i> HTTP Attributes
             </a>
         </h2>
-        <p>
-            HTTP messages are the foundation of web development. Web browsers and HTTP clients such as cURL create
-            HTTP request messages that are sent to a web server, which provides an HTTP response message.
-            Server-side code receives an HTTP request message, and returns an HTTP response message.
-        </p>
+        <ul>
+            <li><strong>IP Remote:</strong> <?= $ipRemote ?></li>
+            <li><strong>IP via Proxy:</strong> <?= $ipViaProxy ?></li>
+            <li><strong>UserAgent:</strong> <?= $userAgent ?></li>
+        </ul>
     </div>
 
     <div class="col-md-4">
