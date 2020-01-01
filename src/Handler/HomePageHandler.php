@@ -17,8 +17,8 @@ use PDO;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
-use Zend\Diactoros\Response\HtmlResponse;
-use Zend\Expressive\Template\TemplateRendererInterface;
+use Laminas\Diactoros\Response\HtmlResponse;
+use Mezzio\Template\TemplateRendererInterface;
 
 class HomePageHandler implements RequestHandlerInterface
 {
@@ -37,12 +37,12 @@ class HomePageHandler implements RequestHandlerInterface
     public function handle(ServerRequestInterface $request) : ResponseInterface
     {
         $data = [];
-        $data['containerName'] = 'Zend Servicemanager';
-        $data['containerDocs'] = 'https://docs.zendframework.com/zend-servicemanager/';
+        $data['containerName'] = 'Laminas Servicemanager';
+        $data['containerDocs'] = 'https://docs.laminas.dev/laminas-servicemanager';
         $data['routerName'] = 'FastRoute';
         $data['routerDocs'] = 'https://github.com/nikic/FastRoute';
-        $data['templateName'] = 'Plates';
-        $data['templateDocs'] = 'http://platesphp.com/';
+        $data['templateName'] = 'mobicms/render';
+        $data['templateDocs'] = 'https://github.com/mobicms/render';
         $data['ipRemote'] = $request->getAttribute(IpAddressMiddleware::IP_REMOTE_ADDR_ATTRIBUTE, '0.0.0.0');
         $data['ipViaProxy'] = $request->getAttribute(IpAddressMiddleware::IP_VIA_PROXY_ATTRIBUTE, 'not used');
         $data['userAgent'] = $request->getAttribute(UserAgentMiddleware::USER_AGENT_ATTRIBUTE, 'not recognized');

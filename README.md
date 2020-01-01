@@ -1,6 +1,6 @@
-# `mobicms-modules/expressive-demo-app`
+# `mobicms-modules/mezzio-demo-app`
 
-This is a **demo application**, that is shiped with [zend-expressive-skeleton](https://github.com/zendframework/zend-expressive-skeleton).  
+This is a **demo application**, that is shiped with [mezzio-skeleton](https://github.com/mezzio/mezzio-skeleton).  
 Changes in the code relating to the refactoring under the [mobiCMS](https://github.com/mobicms/mobicms) modular system.
 
 ## Our links

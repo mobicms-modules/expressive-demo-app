@@ -5,7 +5,7 @@ Detailed change in the [repository log](https://github.com/mobicms-modules/expre
 ## Unreleased 
 
 ### Added
-- [zend-expressive-skeleton](https://github.com/zendframework/zend-expressive-skeleton) demo application
+- [mezzio-skeleton](https://github.com/mezzio/mezzio-skeleton) demo application
 - Database demo query
   
 ### Changed

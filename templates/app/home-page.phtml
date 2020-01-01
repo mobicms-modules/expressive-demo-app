@@ -1,15 +1,15 @@
 <?php $this->layout('layout::default', ['title' => 'Home']) ?>
 
 <div class="jumbotron">
-    <h1>Welcome to <span class="zf-green">zend-expressive</span></h1>
+    <h1>Welcome to <span class="zf-green">Mezzio</span></h1>
     <p>
         Congratulations! You have successfully installed the
-        <a href="https://github.com/zendframework/zend-expressive-skeleton" target="_blank">zend-expressive skeleton
+        <a href="https://github.com/mezzio/mezzio-skeleton" target="_blank">Mezzio skeleton
             application</a>.
         This skeleton can serve as a simple starting point for you to begin building your application.
     </p>
     <p>
-        Expressive builds on zend-stratigility to provide a minimalist PSR-7 middleware framework for PHP.
+        Expressive builds on laminas-stratigility to provide a minimalist PSR-7 middleware framework for PHP.
     </p>
 </div>
 
@@ -42,7 +42,7 @@
 
     <div class="col-md-4">
         <h2>
-            <a href="https://github.com/zendframework/zend-stratigility" target="_blank">
+            <a href="https://github.com/laminas/laminas-stratigility" target="_blank">
                 <i class="fa fa-dot-circle"></i> Middleware
             </a>
         </h2>
@@ -57,11 +57,7 @@
 
 <div class="row">
     <div class="col-md-4">
-        <h2>
-            <a href="https://docs.zendframework.com/zend-expressive/features/container/intro" target="_blank">
-                <i class="fa fa-cube"></i> Containers
-            </a>
-        </h2>
+        <h2><i class="fa fa-cube"></i> Containers</h2>
         <p>
             Expressive promotes and advocates the usage of Dependency Injection/Inversion of Control containers
             when writing your applications. Expressive supports multiple containers which typehints against
@@ -77,13 +73,9 @@
     </div>
 
     <div class="col-md-4">
-        <h2>
-            <a href="https://docs.zendframework.com/zend-expressive/features/router/intro" target="_blank">
-                <i class="fa fa-plane"></i> Routers
-            </a>
-        </h2>
+        <h2><i class="fa fa-plane"></i> Routers</h2>
         <p>
-            One fundamental feature of zend-expressive is that it provides mechanisms for implementing dynamic
+            One fundamental feature of Mezzio is that it provides mechanisms for implementing dynamic
             routing, a feature required in most modern web applications. Expressive ships with multiple adapters.
         </p>
         <?php if (isset($routerName)) : ?>
@@ -96,11 +88,7 @@
     </div>
 
     <div class="col-md-4">
-        <h2>
-            <a href="https://docs.zendframework.com/zend-expressive/features/template/plates" target="_blank">
-                <i class="fa fa-edit"></i> Templating
-            </a>
-        </h2>
+        <h2><i class="fa fa-edit"></i> Templating</h2>
         <p>
             By default, no middleware in Expressive is templated. We do not even provide a default templating
             engine, as the choice of templating engine is often very specific to the project and/or organization.
